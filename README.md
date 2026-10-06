@@ -84,3 +84,4 @@ public/
   assets/resume.pdf ← replace with your real resume
   og-image.jpg      social share image
 ```
+
