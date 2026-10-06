@@ -1,0 +1,38 @@
+.marquee {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-2) var(--space-4);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.marquee:focus-visible { outline-offset: -2px; }
+.track { display: flex; width: max-content; animation: marquee 90s linear infinite; }
+.marquee:hover .track, .marquee:focus-within .track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+.group { display: flex; align-items: stretch; gap: var(--grid-gap); padding-right: var(--grid-gap); }
+
+.card {
+  flex: 0 0 min(82vw, 28rem);
+  background: var(--bg);
+  border: 1px solid rgb(255 255 255 / 0.06);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--dur-base);
+}
+.card:hover { border-color: rgb(255 255 255 / 0.14); }
+.figure { height: 100%; display: flex; flex-direction: column; gap: var(--space-4); padding: clamp(1.5rem, 3vw, 2.25rem); }
+.who { display: flex; align-items: center; gap: var(--space-3); }
+.avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex: none; box-shadow: 0 0 0 2px rgb(255 255 255 / 0.08); }
+.avatarFallback { display: grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: 50%; background: rgb(255 255 255 / 0.06); color: var(--fg); font-size: var(--fs-sm); font-weight: 600; }
+.whoText { display: flex; flex-direction: column; gap: 0.1rem; }
+.name { font-weight: 500; color: var(--color-text); }
+.role { font-size: var(--fs-sm); color: var(--fg); }
+.mark { font-family: var(--font-display); font-size: 4.5rem; line-height: 0.6; height: 2rem; color: var(--fg); margin-top: var(--space-2); }
+.quote { display: flex; flex-direction: column; gap: var(--space-3); color: rgb(240 237 232 / 0.86); font-size: var(--fs-md); line-height: 1.6; }
+
+/* Reduced motion: no auto-scroll, just a swipeable row */
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; padding-inline: var(--gutter); }
+  .track { animation: none; }
+  .clone { display: none; }
+}

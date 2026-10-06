@@ -1,0 +1,104 @@
+/* ─────────────────────────────────────────────────────────────
+   DESIGN TOKENS
+   Change the look of the whole site from this one file.
+   Breakpoints (used in media queries — CSS vars can't be used there):
+     --bp-sm 480px · --bp-md 768px · --bp-lg 1024px · --bp-xl 1280px · --bp-2xl 1440px
+   ───────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: dark;
+
+  /* Colour — refined neutrals + one muted accent */
+  --color-bg: #0e0e0f;
+  --color-bg-elevated: #141416;
+  --color-surface: #19191c;
+  --color-surface-2: #212125;
+  --color-line: #2a2a2f;
+  --color-line-strong: #3a3a40;
+  --color-text: #f0ede8;
+  --color-text-muted: #aaa69f;
+  --color-text-subtle: #8a867f;
+  --color-accent: #c9a97e; /* muted brass / sand */
+  --color-accent-strong: #dcc19b;
+  --color-accent-ink: #17130d;
+  --color-accent-soft: rgb(201 169 126 / 0.12);
+  --color-success: #8fbf9a;
+  --color-image-bg: #ececee;
+
+  /* Muted card tones (recommendations) */
+  --tone-1-bg: #18221e; --tone-1-fg: #a9c7b6;
+  --tone-2-bg: #251c1a; --tone-2-fg: #deb3a0;
+  --tone-3-bg: #1a1d2a; --tone-3-fg: #aeb8e0;
+  --tone-4-bg: #221c29; --tone-4-fg: #c9b1dc;
+  --tone-5-bg: #22211a; --tone-5-fg: #d6cd9e;
+
+  /* Typography */
+  --font-display: var(--font-serif), "Iowan Old Style", Georgia, serif;
+  --font-body: var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: clamp(1.0625rem, 0.3vw + 1rem, 1.125rem);
+  --fs-lead: clamp(1.1875rem, 0.8vw + 0.95rem, 1.5rem);
+  --fs-h4: clamp(1.125rem, 0.5vw + 1rem, 1.3125rem);
+  --fs-h3: clamp(1.5rem, 1.2vw + 1.1rem, 2rem);
+  --fs-h2: clamp(2.125rem, 3.2vw + 1.2rem, 3.75rem);
+  --fs-h1: clamp(2.75rem, 5.5vw + 1rem, 6.25rem);
+  --fs-hero: clamp(4rem, 13vw, 13.5rem);
+  --fs-metric: clamp(2.25rem, 2.6vw + 1.2rem, 3.5rem);
+
+  --lh-tight: 0.95;
+  --lh-snug: 1.15;
+  --lh-body: 1.65;
+  --tracking-tight: -0.02em;
+  --tracking-display: -0.015em;
+  --tracking-eyebrow: 0.14em;
+
+  /* Spacing (8pt-based) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --section-y: clamp(4.5rem, 9vw, 9rem);
+
+  /* Layout */
+  --container-max: 1440px;
+  --container-text: 46rem;
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --nav-h: 4.5rem;
+  --grid-gap: clamp(1.25rem, 2.2vw, 2rem);      /* space between cards */
+  --column-gap: clamp(2rem, 5vw, 5.5rem);      /* space between layout columns */
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  --shadow-lg: 0 30px 80px -24px rgb(0 0 0 / 0.75);
+
+  /* Motion */
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 600ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+    --dur-slow: 0ms;
+  }
+}
