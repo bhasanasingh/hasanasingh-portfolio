@@ -11,6 +11,7 @@
  *  links all update automatically.
  * ─────────────────────────────────────────────────────────────
  */
+import { initiativeCategories, type InitiativeCategory } from "./initiatives";
 
 export type ProjectImage = { src: string; alt: string; width: number; height: number };
 export type Metric = { value: string; label: string };
@@ -76,6 +77,8 @@ export type Project = {
   meta?: { client: string; platform: string; timeline: string; role: string };
   metrics?: Metric[];
   sections: CaseSection[];
+  /** Optional categorised grid of smaller initiatives (used by "32 More Shipped Initiatives") */
+  initiatives?: InitiativeCategory[];
   /** Label for the card link */
   cta?: string;
 };
@@ -468,12 +471,18 @@ export const projects: Project[] = [
       "A broader look at the roadmap: 32 additional shipped and in-flight initiatives across payments, billing self-service, reporting and paper bill experiences.",
     thumbnail: I.initCollage,
     cta: "Read the case study",
-    eyebrow: "Telecom CX · Billing · Payments · Reporting",
+    eyebrow: "Telecom CX · Billing & Reporting Portfolio",
     description:
-      "A broader look at the roadmap: 32 additional shipped and in-flight initiatives across payments, billing self-service, reporting and paper bill experiences.",
-    /* Case study content to be added later — empty sections render a clean placeholder page. */
+      "The flagship case studies are a small slice of a much larger roadmap. This is the rest of it — payments, billing self-service, reporting & QBR, and paper bill — shipped across MyBiz and VEC between 2022 and 2025.",
     gallery: [],
+    meta: {
+      client: "Verizon Business",
+      platform: "MyBiz and VEC customer portals",
+      timeline: "2022 – 2025",
+      role: "Design Lead, Hands-on UX",
+    },
     sections: [],
+    initiatives: initiativeCategories,
   },
 ];
 
