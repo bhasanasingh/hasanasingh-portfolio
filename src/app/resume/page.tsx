@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 import { LinkedIn, Mail, MapPin } from "@/components/Icons";
-import { PlaceholderTag } from "@/components/PlaceholderTag";
 import { experience, skills, tools } from "@/data/experience";
 import { profile } from "@/data/profile";
 import s from "../pages.module.css";
@@ -63,7 +62,7 @@ export default function ResumePage() {
           <ExperienceTimeline items={experience} detailed />
         </section>
 
-        <aside className={s.resumeAside} aria-label="Education, skills and certifications">
+        <aside className={s.resumeAside} aria-label="Education, skills and achievements">
           <section aria-labelledby="r-edu" className={s.resumeBlock}>
             <h2 id="r-edu" className={s.resumeH2}>
               Education
@@ -99,20 +98,15 @@ export default function ResumePage() {
             </ul>
           </section>
 
-          {profile.certifications.length > 0 && (
-            <section aria-labelledby="r-cert" className={s.resumeBlock}>
-              <h2 id="r-cert" className={s.resumeH2}>
-                Certifications
+          {profile.achievements.length > 0 && (
+            <section aria-labelledby="r-achievements" className={s.resumeBlock}>
+              <h2 id="r-achievements" className={s.resumeH2}>
+                Achievements
               </h2>
               <ul role="list" className={s.certs}>
-                {profile.certifications.map((c, i) => (
-                  <li key={i}>
-                    <p>
-                      {c.name} <PlaceholderTag show={!!c.placeholder} />
-                    </p>
-                    <p className="subtle">
-                      {c.issuer} · {c.year}
-                    </p>
+                {profile.achievements.map((a) => (
+                  <li key={a}>
+                    <p>{a}</p>
                   </li>
                 ))}
               </ul>

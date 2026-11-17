@@ -152,3 +152,17 @@
 }
 .skillPills li:hover { border-color: var(--color-accent); background: var(--color-accent-soft); }
 .beyond { max-width: 46rem; }
+
+/* Work — impact reel showcase */
+.impact {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--section-y);
+  border-top: 1px solid var(--color-line);
+  background:
+    radial-gradient(60% 55% at 50% 62%, rgb(201 169 126 / 0.14), transparent 70%),
+    var(--color-bg-elevated);
+}
+.impactHead { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-4); max-width: 46rem; margin: 0 auto clamp(2.5rem, 5vw, 4rem); }
+.impactHead :global(.eyebrow)::before { display: none; }
+.impactTitle { font-family: var(--font-display); font-size: var(--fs-h1); line-height: 1.02; letter-spacing: var(--tracking-display); }

@@ -1,10 +1,12 @@
-.wrap { display: flex; flex-direction: column; gap: var(--space-3); }
+.wrap { display: flex; flex-direction: column; align-items: center; gap: var(--space-4); max-width: 72rem; margin-inline: auto; }
 .frame {
   position: relative;
+  width: 100%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--color-bg);
-  border: 1px solid var(--color-line);
+  border: 1px solid rgb(201 169 126 / 0.45);
+  box-shadow: 0 0 0 6px rgb(201 169 126 / 0.06), 0 40px 120px -30px rgb(201 169 126 / 0.35), var(--shadow-lg);
   aspect-ratio: 16 / 9;
 }
 .video { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -22,4 +24,8 @@
   transition: border-color var(--dur-fast);
 }
 .toggle:hover { border-color: var(--color-text); }
-.caption { font-size: var(--fs-sm); color: var(--color-text-subtle); max-width: 52rem; }
+.caption { font-size: var(--fs-sm); color: var(--color-text-subtle); max-width: 52rem; text-align: center; }
+@media (max-width: 639px) {
+  .toggle { right: var(--space-2); bottom: var(--space-2); min-height: 32px; width: 32px; padding: 0; justify-content: center; }
+  .toggle span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}

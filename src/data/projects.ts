@@ -129,7 +129,7 @@ export const projects: Project[] = [
     cta: "Read the case study",
     eyebrow: "Telecom CX · AI Assistant UX · Billing Self-Service",
     description:
-      "How we evolved bill inquiry from a manual, support-heavy process into an AI-assisted digital experience across Verizon Business billing journeys.",
+      "How the bill inquiry process evolved from a manual, support-heavy process into an AI-assisted digital experience across Verizon Business billing journeys.",
     gallery: [I.exploration, I.pageLevel, I.chart, I.billingList, I.compareBills, I.modal],
     meta: {
       client: "Verizon",

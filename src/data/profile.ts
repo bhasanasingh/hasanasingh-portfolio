@@ -75,10 +75,10 @@ export const profile = {
     years: "2003 – 2005",
   },
 
-  /** Optional. Leave the array empty to hide the Certifications section. */
-  certifications: [
-    { name: "[Placeholder] Certification name", issuer: "Issuing organisation", year: "20XX", placeholder: true },
-    { name: "[Placeholder] Certification name", issuer: "Issuing organisation", year: "20XX", placeholder: true },
+  /** Achievements shown on the Resume page. Leave the array empty to hide the section. */
+  achievements: [
+    "Awarded with Spotlight",
+    "An acknowledgment from SVP about AI agent in Forbes magazine 2025 edition",
   ],
 };
 

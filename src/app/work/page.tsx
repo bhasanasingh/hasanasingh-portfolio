@@ -27,15 +27,22 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section className="section--tight" aria-label="Impact reel" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <ImpactReel />
-        </div>
-      </section>
-
       <section className="section" aria-label="Projects">
         <div className="container">
           <ProjectGrid projects={projects} headingLevel="h2" />
+        </div>
+      </section>
+
+      <section className={s.impact} aria-labelledby="impact-title">
+        <div className="container">
+          <div className={s.impactHead} data-reveal>
+            <p className="eyebrow">Impact at a glance</p>
+            <h2 id="impact-title" className={s.impactTitle}>
+              The numbers behind <span className="italic accent">the work</span>
+            </h2>
+            <p className="lead muted">Fourteen seconds on what these projects changed for customers and the business.</p>
+          </div>
+          <ImpactReel />
         </div>
       </section>
 
