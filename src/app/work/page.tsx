@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FinalCTA } from "@/components/FinalCTA";
+import { ImpactReel } from "@/components/ImpactReel";
 import { ProjectGrid } from "@/components/ProjectGrid";
 import { projects } from "@/data/projects";
 import s from "../pages.module.css";
@@ -23,6 +24,12 @@ export default function WorkPage() {
             Case studies in telecom billing, payments and <span className="italic accent">AI self-service</span>
           </h1>
           <p className={`lead muted ${s.pageIntro}`}>Thoughtfully designed products shaped by research, strategy, and measurable outcomes.</p>
+        </div>
+      </section>
+
+      <section className="section--tight" aria-label="Impact reel" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <ImpactReel />
         </div>
       </section>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CaseStudySection } from "@/components/CaseStudySection";
 import { FinalCTA } from "@/components/FinalCTA";
+import { Initiatives } from "@/components/Initiatives";
 import { MetricCards } from "@/components/MetricCards";
 import { ProjectGallery } from "@/components/ProjectGallery";
 import { ProjectHero } from "@/components/ProjectHero";
@@ -63,7 +64,9 @@ export default async function ProjectPage({ params }: Props) {
         </section>
       )}
 
-      {hasContent ? (
+      {project.initiatives ? (
+        <Initiatives categories={project.initiatives} />
+      ) : hasContent ? (
         project.sections.map((section) => <CaseStudySection key={section.id} section={section} />)
       ) : (
         <section className={cs.soon} aria-label="Case study status">
