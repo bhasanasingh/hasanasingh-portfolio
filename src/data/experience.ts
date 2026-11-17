@@ -38,7 +38,7 @@ export const experience: Experience[] = [
   },
   {
     company: "BNY Mellon",
-    role: "Lead Experience Designer",
+    role: "Lead UX Designer",
     location: "Chennai, India",
     start: "2014",
     end: "2019",

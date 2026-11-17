@@ -32,10 +32,10 @@
   letter-spacing: -0.03em;
 }
 .heroLine { display: inline-block; }
-.heroItalic { font-style: italic; color: var(--color-accent); padding-right: 0.05em; }
+.heroSecond { color: inherit; }
 @media (prefers-reduced-motion: no-preference) {
   .heroLine { animation: rise 1000ms var(--ease-out) both; }
-  .heroItalic { animation-delay: 90ms; }
+  .heroSecond { animation-delay: 90ms; }
   .avatar { animation: fade 800ms var(--ease-out) both; }
   .heroCopy { animation: fade 900ms var(--ease-out) 250ms both; }
 }

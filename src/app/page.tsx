@@ -58,7 +58,7 @@ export default function HomePage() {
             </p>
             <h1 id="hero-title" className={s.heroTitle}>
               <span className={s.heroLine}>Hasana</span>{" "}
-              <span className={`${s.heroLine} ${s.heroItalic}`}>Singh</span>
+              <span className={`${s.heroLine} ${s.heroSecond}`}>Singh</span>
             </h1>
             <div className={s.heroCopy}>
               <p className={`lead ${s.heroIntro}`}>{profile.hero.intro}</p>
