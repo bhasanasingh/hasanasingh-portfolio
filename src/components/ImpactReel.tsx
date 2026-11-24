@@ -57,7 +57,7 @@ export function ImpactReel() {
         </button>
       </div>
       <figcaption id="reel-caption" className={s.caption}>
-        Impact at a glance — 6× faster payments, 1.6M customers reached, $2.9M saved per year, 85% AI assistant accuracy, 120K+ calls deflected per quarter, and 34+ projects shipped in 2 years.
+        Impact at a glance — 6× faster payments, 1.6M customers reached, $2.9M saved per year, 85% AI Assistant accuracy, 120K+ calls deflected per quarter, and 32+ projects shipped in 2 years.
       </figcaption>
     </figure>
   );

@@ -27,10 +27,10 @@ export const experience: Experience[] = [
     summary:
       "Led UX for billing, payments and reporting journeys on Verizon Business's MyBiz enterprise portal, serving small and medium business customers.",
     achievements: [
-      "6× faster payments (90s → 15s) and an average of 10,000+ additional positive VoC comments per month, by redesigning the one-time payment transaction and merging it with future-dated payments.",
-      "$2.9M saved per year by offloading 760K annual bill inquiries — pioneered the designs for the first-ever AI-funded project, a Google CCAI-powered agent that achieved 85% accuracy and a 70% containment rate.",
+      "6× faster payments (90s → 15s) and an average of 10,000+ additional positive VOC comments per month, by redesigning the one-time payment transaction and merging it with future-dated payments.",
+      "$2.9M saved per year by offloading 760K annual Bill Inquiries — pioneered the designs for the first-ever AI-funded project, a Google CCAI-powered agent that achieved 85% accuracy and a 70% containment rate.",
       "8× faster future-dated payments (under 2 minutes, compared with 16 minutes through assisted support) by designing a self-serve experience.",
-      "4,000+ VoC data points from Medallia and Quantum Metric analysed and mapped to billing and payment transaction screens, identifying friction areas for UX improvements throughout the year.",
+      "4,000+ VOC data points from Medallia and Quantum Metric analysed and mapped to billing and payment transaction screens, identifying friction areas for UX improvements throughout the year.",
       "$3.5M in annual upsell and cross-sell opportunities (through PEGA recommendations) enabled by interactive dashboards that let business customers explore their financial and usage patterns without relying on sales reps; onboarded contractors and junior designers onto these complex data-visualisation projects.",
       "Institutionalised UserTesting.com across the lifecycle of all critical projects, running workshops on moderated and unmoderated testing protocols for peers and senior leadership to secure executive buy-in for data-informed decisions.",
       "Partnered with stakeholders on roadmap planning, aligning design delivery timelines and feature prioritisation with high-level business objectives.",

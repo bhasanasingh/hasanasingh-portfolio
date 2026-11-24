@@ -51,7 +51,7 @@ export const profile = {
     intro: [
       "I'm a senior product designer who works where the stakes are high and the systems are dense — billing, payments and AI-assisted self-service for business customers at telecom scale.",
       "I started my career as a technical writer, which gave me an instinct for structure, precise language and reader empathy. That foundation still shapes how I design: I untangle complex information until it reads as simple, obvious and trustworthy.",
-      "My approach is research-first and evidence-led. I combine voice-of-customer data, analytics, heuristics and usability testing to find where an experience is really breaking — then sequence the work so quick wins ship fast and the deeper structural fixes follow.",
+      "My approach is research-first and evidence-led. I combine Voice of Customer (VOC) data, analytics, heuristics and usability testing to find where an experience is really breaking — then sequence the work so quick wins ship fast and the deeper structural fixes follow.",
     ],
     /** "Hi, I'm Hasana" section (first section of the About page) */
     bio: [

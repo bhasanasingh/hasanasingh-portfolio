@@ -40,7 +40,7 @@ export default function WorkPage() {
             <h2 id="impact-title" className={s.impactTitle}>
               The numbers behind <span className="italic accent">the work</span>
             </h2>
-            <p className="lead muted">Fourteen seconds on what these projects changed for customers and the business.</p>
+            <p className="lead muted">See the impact these projects made for customers and the business in 14 seconds.</p>
           </div>
           <ImpactReel />
         </div>

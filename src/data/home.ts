@@ -4,10 +4,10 @@ export type Metric = { value: string; label: string };
 
 export const signatureMetrics: Metric[] = [
   { value: "6×", label: "faster payments" },
-  { value: "1.6M", label: "customers reached by AI assistant" },
+  { value: "1.6M", label: "customers reached by AI Assistant" },
   { value: "$2.9M", label: "operational costs saved per year" },
-  { value: "85%", label: "AI assistant accuracy" },
-  { value: "34+", label: "projects shipped in 2 years" },
+  { value: "85%", label: "AI Assistant accuracy" },
+  { value: "32+", label: "projects shipped in 2 years" },
 ];
 
 export const contributions = [
@@ -17,7 +17,7 @@ export const contributions = [
   },
   {
     title: "Project knowledge centre",
-    text: "Authored a living knowledge base covering problem statement, delivery timelines, launch details, primary & secondary research, usability tests, design audits, critical VoC, and post-launch enhancements.",
+    text: "Authored a living knowledge base covering problem statement, delivery timelines, launch details, primary & secondary research, usability tests, design audits, critical VOC, and post-launch enhancements.",
   },
   {
     title: "Capability metrics, sitemap & task flows",
@@ -41,7 +41,7 @@ export const awards = [
   },
   {
     title: "Product & Marketing recognition",
-    text: "Acknowledged for analysing VOCs and reimagining the payment experiences for S&M business customers.",
+    text: "Acknowledged for analysing VOC feedback and reimagining the payment experiences for S&M business customers.",
   },
 ];
 

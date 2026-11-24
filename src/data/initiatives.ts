@@ -53,15 +53,15 @@ export const initiativeCategories: InitiativeCategory[] = [
       },
       {
         title: "PTP & OTP integration MVP2",
-        text: "Made Autopay and device-agreement payoff transactions consistent with the updated PTP & OTP experience.",
+        text: "Made Auto Pay and device-agreement payoff transactions consistent with the updated PTP & OTP experience.",
         outcomes: ["Avoided multiple, inconsistent payment experiences", "Reduced cognitive load"],
         image: img(6, "PTP & OTP integration MVP2 screen design", 1400, 933),
       },
       {
-        title: "Autopay redesign (merge with OTP & PTP)",
-        text: "Merged Autopay into the new OTP/PTP payment framework for consistency and adoption.",
-        outcomes: ["Increased Autopay adoption rate", "Reduced cognitive load"],
-        image: img(7, "Autopay redesign (merge with OTP & PTP) screen design", 1400, 933),
+        title: "Auto Pay redesign (merge with OTP & PTP)",
+        text: "Merged Auto Pay into the new OTP/PTP payment framework for consistency and adoption.",
+        outcomes: ["Increased Auto Pay adoption rate", "Reduced cognitive load"],
+        image: img(7, "Auto Pay redesign (merge with OTP & PTP) screen design", 1400, 933),
       },
     ],
   },
@@ -69,16 +69,16 @@ export const initiativeCategories: InitiativeCategory[] = [
     name: "Billing & Self-Service",
     items: [
       {
-        title: "Bill inquiry",
-        text: "Digital capability for customers to submit and track bill inquiries through quick tasks (logged out) and secure messaging (logged in).",
+        title: "Bill Inquiry",
+        text: "Digital capability for customers to submit and track Bill Inquiries through quick tasks (logged out) and secure messaging (logged in).",
         outcomes: ["120K+ calls deflected per quarter", "2–6% reduction in negative comments", "+7% digital billing mix"],
-        image: img(8, "Bill inquiry screen design", 1400, 933),
+        image: img(8, "Bill Inquiry screen design", 1400, 933),
       },
       {
-        title: "AI assistant",
+        title: "AI Assistant",
         text: "Extended the Bill Inquiry AI agent across all Billing pages via a floating UI, instead of one dedicated page.",
         outcomes: ["85% accuracy", "3.2s average response time", "70% call containment"],
-        image: img(9, "AI assistant screen design", 1400, 933),
+        image: img(9, "AI Assistant screen design", 1400, 933),
       },
       {
         title: "Display service credits",
@@ -200,7 +200,7 @@ export const initiativeCategories: InitiativeCategory[] = [
     items: [
       {
         title: "Paper Bill MVP1",
-        text: "Redesigned paper bill page 1 with a clear snapshot of the bill, QR code and Autopay information.",
+        text: "Redesigned paper bill page 1 with a clear snapshot of the bill, QR code and Auto Pay information.",
         outcomes: ["Reduction in assisted-channel calls", "Fewer negative VOC comments"],
         image: img(27, "Paper Bill MVP1 screen design", 1400, 839),
       },
@@ -212,7 +212,7 @@ export const initiativeCategories: InitiativeCategory[] = [
       },
       {
         title: "Paper Bill MVP3",
-        text: "Added Autopay, payment and adjustment-summary information, plus a changes-since-last-bill summary.",
+        text: "Added Auto Pay, payment and adjustment-summary information, plus a changes-since-last-bill summary.",
         outcomes: ["Reduction in assisted-channel calls", "Fewer negative VOC comments"],
         image: img(29, "Paper Bill MVP3 screen design", 1400, 839),
       },
